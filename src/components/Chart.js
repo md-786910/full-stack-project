@@ -36,7 +36,7 @@ function Chart() {
 
   const fetchAPi = async () => {
     try {
-      const resp = await fetch("/api");
+      const resp = await fetch("https://api-devlopment.herokuapp.com/api");
 
       const data = await resp.json();
 

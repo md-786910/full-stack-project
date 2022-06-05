@@ -48,7 +48,7 @@ function FormApi(props) {
       } else if (!image) {
         alert("please send again ");
       } else {
-        const resp = await fetch("/api", {
+        const resp = await fetch("https://api-devlopment.herokuapp.com/api", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -86,7 +86,7 @@ function FormApi(props) {
       } else if (!image) {
         alert("please update image send one more");
       } else {
-        const resp = await fetch("/api", {
+        const resp = await fetch("https://api-devlopment.herokuapp.com/api", {
           method: "PATCH",
           headers: {
             "Content-Type": "application/json",
