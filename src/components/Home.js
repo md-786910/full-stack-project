@@ -6,7 +6,7 @@ function Home() {
 
   const fetchApi = async () => {
     try {
-      const resp = await fetch("/api", {
+      const resp = await fetch("https://api-devlopment.herokuapp.com/api", {
         method: "GET",
       });
       const data = await resp.json();
